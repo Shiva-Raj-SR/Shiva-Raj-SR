@@ -1,8 +1,8 @@
 # Shiva Raj Chippa
 
-I focus on bioinformatics and computational genomics, with an interest in reproducible workflows and evidence-based evaluation of genomic analyses.
+I focus on bioinformatics, transcriptomics, and computational genomics, with an interest in reproducible workflows and evidence-based evaluation of genomic analyses.
 
-## Featured project
+## Research projects
 
 ### [Germline WES pipeline](https://github.com/Shiva-Raj-SR/germline-wes-pipeline)
 
@@ -15,3 +15,15 @@ A 13-process Nextflow DSL2 workflow from paired-end FASTQ reads to normalized, h
 [Benchmark methods and limitations](https://github.com/Shiva-Raj-SR/germline-wes-pipeline/blob/main/docs/benchmarking.md) · [Execution provenance](https://github.com/Shiva-Raj-SR/germline-wes-pipeline/blob/main/metadata/HG002_nextflow_full_01_provenance.md) · [Annotation and prioritization](https://github.com/Shiva-Raj-SR/germline-wes-pipeline/blob/main/docs/annotation_prioritization.md)
 
 This project demonstrates workflow development, germline variant analysis, reproducibility, and benchmark interpretation. The reported results are specific to the defined HG002 evaluation territory and do not constitute clinical validation.
+
+### [Time-course RNA-seq analysis of *Glycyrrhiza uralensis*](https://github.com/Shiva-Raj-SR/Time-course-RNA-Seq-analysis-of-Glycyrrhiza-uralensis-response-to-insect-infestation)
+
+A transcriptomic analysis of licorice leaves across control, 6 h, 12 h, and 24 h insect-infestation groups, using 12 paired-end samples with three biological replicates per group.
+
+- Uses a per-sample Bash workflow for read processing, HISAT2 alignment, and featureCounts gene counting, followed by DESeq2 treatment-versus-control comparisons.
+- Uses separate downstream DIAMOND best-hit mapping to *Arabidopsis thaliana* and GO/KEGG over-representation analyses to identify candidate functional associations.
+- Includes sample-to-SRA accession mapping, analysis scripts, expression tables, PCA and other visualizations, and documentation of reproducibility limitations.
+
+[Study design and workflow](https://github.com/Shiva-Raj-SR/Time-course-RNA-Seq-analysis-of-Glycyrrhiza-uralensis-response-to-insect-infestation/blob/main/README.md) · [Results and interpretation](https://github.com/Shiva-Raj-SR/Time-course-RNA-Seq-analysis-of-Glycyrrhiza-uralensis-response-to-insect-infestation/blob/main/Nature_Mode_Results.md) · [Analysis outputs](https://github.com/Shiva-Raj-SR/Time-course-RNA-Seq-analysis-of-Glycyrrhiza-uralensis-response-to-insect-infestation/tree/main/results)
+
+This project demonstrates RNA-seq processing, differential expression analysis, annotation, and interpretation of enrichment results. The computational findings support hypotheses for follow-up; they do not establish pathway activity, metabolite accumulation, or causal defense mechanisms.
